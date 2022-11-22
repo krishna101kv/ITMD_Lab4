@@ -1,0 +1,179 @@
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-size: 100%;
+  background: lightgray;
+  background: darkgray;
+  
+}
+
+
+.card {
+  
+  background: #81a2e4;
+  color: white;
+  padding: 2em;
+  width: 100%;
+  max-width: 400px;
+  margin: 1em;
+}
+
+.search{
+ display: flex;
+ align-items: center; 
+ justify-content: right;
+}
+
+
+button {
+    margin: 1em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background:black;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+    background: #7c7c7c2b;
+    border: 2px solid black;
+    outline: none;
+    padding: 0.4em 1em;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100%-100px);
+}
+.weather_today
+{
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+
+
+
+.geolocation
+{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  
+}
+.location-btn{
+  height: 25px;
+  width: 25px;
+}
+.locationbtn{
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 200px;
+  border-radius: 5px;
+  background: white;
+  color: white;
+}
+.input-part button:hover{
+  background: #1d9ffc;
+}
+
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+
+}
+
+.humidity{
+  margin-bottom: 5px;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.35em;
+}
+
+.icon{
+  max-width: 30%;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.weather_forecast{
+
+display: grid;
+
+
+grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+grid-gap: 20px;
+text-align: center;
+margin-right: 40px;
+margin-left: 40px;
+margin-top: 50px;
+
+}
+
+.weather_forecast_icon{
+  max-width: 50%;
+}
+
+.weather_forecast_item{
+  background: #90a7d5;  
+  color: white;
+
+
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+
+
+
+@media all and (max-width: 600px) and (min-width: 320px){
+  body{
+    
+    
+  }
+
+  .card {
+  
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    width: 50%;
+    max-width: 400px;
+    margin: 1em;
+  }
+  
+  
+  }
+
+
+
